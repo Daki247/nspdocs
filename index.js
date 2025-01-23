@@ -14,3 +14,7 @@ function whatsapp()
 {
     window.open('https://wa.me/+918050935734', '_blank');
 }
+function web()
+{
+    window.open('https://nspdocs.netlify.app/', '_blank');
+}
