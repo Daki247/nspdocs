@@ -3,12 +3,10 @@
     width:100px;
 }
 nav ul{
-    display: flex;
-    justify-content: right;
     list-style: none;
 }
 nav{
-    
+    text-align: right;
     font-family: 'Courgette', cursive;
     width: 40%;
 }
