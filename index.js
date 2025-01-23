@@ -1,6 +1,6 @@
 function callnwpage()
 {
-    window.open('https://l.facebook.com/l.php?u=https%3A%2F%2Fforms.gle%2Fi1kd2erpCtb7HSUS6%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR3MpWYW5nnoZtOvPo3em_GHkRdWcvZE5A-YKEY52XSai4zdesp6dfdCMw8_aem_EPtCTdkbAumuNB6JmUgO5A&h=AT2aE1dhFMdawgGyy2XwSu6V4AcVLP5FQtnctPWwq0WsCj9X9_LaKyAMphRcHyUMWs0SreNRZoTNuRgIYMdAGi7LhgutEN0tw15vn4V8OOX83jndXTpcBJ4JdgXqNhZASPkwq5CGjpRnGZtaCSgA-Q', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdwydVZLaiZYAC5SNctNGnIDMqSomrefOss538HwkZKWGtPpw/viewform', '_blank');
 }
 function facebook()
 {
