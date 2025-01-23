@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+.logo img{
+    width:100px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav{
+    
+    font-family: 'Courgette', cursive;
+    width: 40%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ff0000;
+}
+/* nav ul li a:hover{
+    color:#7dc843;
+    font-size: 20px;
+} */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.row .image img{
+    width: 250px;
+}
+
+.header{
+    background: linear-gradient(yellow, orange);
+}
+.row .content{
+    font-family: 'Tilt Prism', cursive;
+    color: rgb(220, 26, 26);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: azure;
+}
+.products{
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.product-row{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.product-card img{
+    width: 300px;
+}
+
+.rating{
+    color:yellow;
+}
+.adimage img{
+    width: 350px;
+}
+
+.ad{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(yellow,rgb(172, 234, 255));
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.buy{
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    border: none;
+}
+.cart{
+    color: rgb(232, 232, 20);
+}
+.review-row{
+    text-align: left;
+}
+
+.review-card img{
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.review-card{
+    text-align: left;
+    background-color: azure;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(151, 145, 145);
+    align-self: center;
+}
+
+
+.review-card p{
+    font-family: 'Courgette', cursive;
+}
+
+#tables{
+    text-align: left;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+.download h1{
+    font-size: 15px;
+    color: white;
+}
+
+.download img{
+    width: 150px;
+}
+
+.logo{
+    color:white;
+    text-align: center;
+
+}
+
+
+.ul{
+    color: white;
+    font-size: 15px;
+}
+
+.ulb{
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    border: none;
+}
+.sm{
+    color: white;
+    font-size: 15px;
+}
+
+.smb{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.img{
+    text-align: center;
+}
+
+.product-h{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+.product-h select{
+    padding: 10px;
+}
+
+.product-h h1{
+    color:rgb(43, 43, 204);
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted ;
+    border-color: gray;
+    border-width: 10px;
+    width: 30%;
+}
+
+
+.product-card{
+    box-shadow: 0 0 10px rgb(151, 145, 145);
+}
+.product-card:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.pages{
+    padding: 30px;
+
+}
+span{
+    font-size: 25px;
+    border-style:dotted;
+    padding: 5px;
+    margin: 5px;
+}
+
+span:hover{
+    background-color: black;
+    color:white;
+    box-shadow: 0 0 10px rgb(151, 145, 145);
+    
+}
+.form{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    margin-bottom: 110px;
+}
+
+.form button{
+    background: linear-gradient(lightblue, pink) ;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.form input{
+    margin-bottom:10px;
+    padding: 8px;
+    border-radius: 10px;
+    border-color: lightgrey;
+    border-style: solid;
+}
+
+.form label{
+    font-size: 22px;
+}
+
+.content button{
+    background: linear-gradient(lightblue, pink);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    padding: 25px;
+    background: linear-gradient( yellow,rgb(172, 234, 255));
+    border-radius: 10px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart-p{
+    display: flex;
+    justify-content: space-around;
+}
+.cart-p img{
+    width: 100px;
+    margin: 25px
+}
+
+.cart-d{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.cart-d input{
+    width: 35px;
+    height: 35px
+}
+
