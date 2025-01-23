@@ -4,7 +4,7 @@ function callnwpage()
 }
 function facebook()
 {
-    window.location='https://www.facebook.com/ch.chowdary.12';
+    window.location='https://www.facebook.com/profile.php?id=61567852370903';
 }
 function instagram()
 {
@@ -12,5 +12,5 @@ function instagram()
 }
 function whatsapp()
 {
-    window.location='https://wa.me/message/NPP6Z2GD5TEGO1';
+    window.location='https://wa.me/+918050935734';
 }
