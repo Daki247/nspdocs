@@ -36,7 +36,7 @@ nav ul li a{
 }
 
 .header{
-    background: aqua;
+    background: background-gradient(yellow, orange);
 }
 .row .content{
     font-family: 'Tilt Prism', cursive;
