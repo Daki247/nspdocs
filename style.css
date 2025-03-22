@@ -70,4 +70,52 @@ body {
     padding: 10px;
 }
 
-.dropdown:hover .dropdown
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.login-btn {
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cutoff-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.cutoff-container img {
+    width: 100%; /* Changed to 100% to fill container */
+    height: auto;
+    clip-path: ellipse(75% 100% at 50% 0%);
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav {
+    text-align: right;
+    font-family: 'Courgette', cursive;
+    width: 40%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 2
