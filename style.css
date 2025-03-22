@@ -73,7 +73,7 @@ body {
             overflow: hidden;
         }
         .cutoff-container img {
-            width: 100%;
+            width: 100px;
             height: auto;
             clip-path: ellipse(75% 100% at 50% 0%);
         }
