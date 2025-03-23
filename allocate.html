@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="assets/css/meanmenu.css" />
     <link rel="stylesheet" href="assets/css/flaticon.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
     <link href="assets/scroll/animate.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/1ec2f3a02a.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
@@ -51,6 +55,64 @@
                 <h1>Nitya Stotra Parayanam</h1>
             </div>
         </div>
+    </div>
+    <div class="container">
+<div class="row">
+	<!--Names-->
+	<div class="col-sm-3">
+	
+	<div class="row"> 
+		<div class="col-sm-6">
+			<input type="text" class="form-control" id="batchnumber"  style="font-family: Courier" placeholder="Batch Number e.g. LS1, LS2" required></input>
+		</div>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" id="satsangdate"  style="font-family: Courier" placeholder="Satsang date e.g. 2-Sep-2025 /1 PM IST" required></input>
+		</div>
+	</div>
+	  <label for="names" class="form-label">Enter Names</label>
+	  <br>
+	  <small><i>*Enter <strong>NSP</strong> as first name to allocate one portion once. (optional)</i></small>
+	  
+	  <textarea class="form-control" id="names" rows="15" style="font-family: Courier; margin: 5px 0 0 0 ">persons</textarea>
+	  <div class="row"> 
+		  <button type="button" accesskey="c" class="btn btn-danger" style="margin: 10px 5px 5px 10px;" onclick = "clearNames()">Clear</button>
+		  <button type="button" class="btn btn-danger" style="margin: 10px 5px 5px 10px;" onclick = "tempSave()"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
+	  </div>
+	</div>
+
+
+	<!--Allocation-->
+	<div class="col-sm-6">
+		<div class="row">
+			<button type="button" accesskey="a" class="btn btn-success" style="margin: 10px 5px 5px 10px;" onclick = "allocate('asis')">Allocate</button>
+			<button type="button" class="btn btn-success" style="margin: 10px 5px 5px 10px;" onclick = "allocate('random')">Alloc Randomly</button>
+			<!--<button type="button" class="btn btn-success" style="margin: 10px 5px 5px 10px;" onclick = "allocate('roll')">Alloc on-Roll</button>-->
+			
+			<button type="button" class="btn btn-success" style="margin: 10px 5px 5px 10px;" onclick = "allocate('shloka')">Alloc only Shloka</button>
+		</div>
+	  <label for="allocation" class="form-label">Allocation</label>
+	  <textarea class="form-control" id="allocation" rows="15" style="font-family: Courier; background: #e6ebe7"></textarea>
+	  <div class="row"> 
+		  <button type="button" class="btn btn-success btn-md" style="margin: 10px 5px 0px 10px;" onclick = "copyToClipboard('allocation')"><span class="glyphicon glyphicon-copy"></span> Copy Allocations</button> 
+		  <button type="button" class="btn btn-success btn-md" style="margin: 10px 5px 0px 10px;" onclick = "downloadCSV()"><span class="glyphicon glyphicon-download-alt"></span> Download CSV/XL</button> 
+	  </div>
+	</div>
+	
+	<!--Random Names-->
+	<div class="col-sm-3">
+		<div class="row">
+			<button type="button" class="btn btn-info" style="margin: 10px 5px 5px 10px;" onclick = "operateNames('random')">Randomize Names</button>
+		</div>
+		<label for="randomnames" class="form-label">Randomized Names</label>
+		<textarea class="form-control" id="randomnames" rows="15" style="font-family: Courier; background: #e6ebe7"></textarea>
+	  <div class="row"> 
+		  <button type="button" class="btn btn-info btn-md" style="margin: 10px 15px;" onclick = "copyToClipboard('randomnames')"><span class="glyphicon glyphicon-copy"></span> Copy Names</button> 
+	  </div>
+	</div>
+	
+</div>
+<br>
+<br>
     </div>
     <div class="footer">
         <div class="sm">
