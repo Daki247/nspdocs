@@ -21,18 +21,16 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: center; /* Vertical centering */
+    justify-content: flex-start; /* Horizontal left alignment */
     color: white;
-    text-align: left;
+    text-align: left; /* Text alignment within slide-content */
 }
 
 .slide-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
-    text-align: left; /* Align text to the left */
-    align-self: flex-start; /* Align slide content to the start */
     margin-left: 50px; /* Add left margin to move text to the left */
 }
 
