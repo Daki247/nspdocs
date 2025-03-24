@@ -10,6 +10,7 @@ function nextSlide() {
             }
             slider.style.transform = `translateX(-${counter * slideWidth}px)`;
         }
+
 function prevSlide() {
             counter--;
             if (counter < 0) {
@@ -17,4 +18,5 @@ function prevSlide() {
             }
             slider.style.transform = `translateX(-${counter * slideWidth}px)`;
         }
+
 setInterval(nextSlide, 5000);
