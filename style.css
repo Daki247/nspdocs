@@ -43,6 +43,11 @@
     transform: translateY(-50%);
 }
 
+.slide-content p {
+    background-color: rgb(255,196,0);
+    border-radius: 7px;
+}
+
 .slider-nav button {
     background: rgba(0, 0, 0, 0.5);
     color: white;
