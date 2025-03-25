@@ -208,6 +208,10 @@ body{
     margin-top: 60px;
 }
 
+#facebook, #instagram, #youtube{
+    width: 30px
+}
+
 #facebook:hover{
     color: #e1306c
 }
