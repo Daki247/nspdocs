@@ -208,7 +208,7 @@ body{
     margin-top: 60px;
 }
 
-#facebook, #instagram, #youtube{
+.fb, .ig, .yt{
     width: 100px
 }
 
