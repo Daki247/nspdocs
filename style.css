@@ -209,11 +209,11 @@ body{
 }
 
 #facebook, #instagram, #youtube{
-    width: 70px
+    width: 100px
 }
 
 #facebook:hover{
-    color: #e1306c
+    color: #74C0FC;
 }
 #instagram:hover{
     color: #e1306c
