@@ -98,7 +98,7 @@
             align-items: center;
             position: relative;
         }
-        .menu a {
+        #menu_options a {
             text-decoration: none;
             color: black;
             padding: 10px 15px;
@@ -106,7 +106,7 @@
             display: flex;
             align-items: center;
         }
-        .menu a:hover, .dropdown:hover .dropbtn {
+        #menu_options a:hover, .dropdown:hover .dropbtn {
             background: #ffd700;
         }
         .dropdown {
