@@ -136,6 +136,13 @@
             text-decoration: none;
             border-radius: 5px;
         }
+        .login-btn:hover {
+            background: yellow;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
         .cutoff-container {
             position: relative;
             width: 100%;
