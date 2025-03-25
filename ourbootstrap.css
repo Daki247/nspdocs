@@ -166,14 +166,15 @@
     height: 250px;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Changed to flex-start */
     align-items: center;
 }
 
 .cutoff-container img {
-            width: 100px;
-            height: auto;
-            clip-path: ellipse(75% 100% at 50% 0%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    clip-path: ellipse(75% 100% at 50% 0%);
 }
 
 .cutoff-text {
