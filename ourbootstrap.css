@@ -188,23 +188,23 @@
     z-index: 1;
 }
 
-.navbar-brand img { /* Targeting logo within navbar-brand */
-    width: 70px; /* Reduced logo size */
-    height: auto; /* Maintain aspect ratio */
+.navbar-brand img {
+    width: 70px;
+    height: auto;
 }
 
 /* Menu Fix */
-
-.navbar-nav .nav-item .nav-link { /* Targeting navbar links */
+.navbar-nav .nav-item .nav-link {
     padding: 15px 20px;
     font-size: 18px;
     font-weight: bold;
+    color: black; /* Added color black */
 }
 
-.menu .navbar-nav .nav-item .dropdown .dropdown-menu .dropdown-item {
-    font-size: 16px; /* Adjust dropdown item font size */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    font-size: 16px;
+    color: black; /* Added color black */
 }
-
 .logo img {
     width: 70px; /* Reduced logo size */
 }
