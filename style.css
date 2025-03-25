@@ -208,9 +208,6 @@ body{
     margin-top: 60px;
 }
 
-.fb, .ig, .yt{
-    width: 100px
-}
 
 #facebook:hover{
     color: #74C0FC;
