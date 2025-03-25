@@ -166,14 +166,13 @@
     height: 250px;
     overflow: hidden;
     display: flex;
-    justify-content: flex-start; /* Changed to flex-start */
+    justify-content: flex-start;
     align-items: center;
 }
 
 .cutoff-container img {
-    position: relative;
     width: 100%;
-    height: 250px;
+    height: auto;
     object-fit: cover;
     clip-path: ellipse(75% 100% at 50% 0%);
 }
@@ -187,6 +186,23 @@
     color: rgb(220, 26, 26);
     font-family: 'Tilt Prism', cursive;
     z-index: 1;
+}
+
+.navbar-brand img { /* Targeting logo within navbar-brand */
+    width: 70px; /* Reduced logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Menu Fix */
+
+.navbar-nav .nav-item .nav-link { /* Targeting navbar links */
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu .navbar-nav .nav-item .dropdown .dropdown-menu .dropdown-item {
+    font-size: 16px; /* Adjust dropdown item font size */
 }
 
 .logo img {
