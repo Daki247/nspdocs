@@ -108,10 +108,11 @@
 #menu_options a {
     text-decoration: none;
     color: black;
-    padding: 10px 15px;
+    padding: 15px 20px; /* Increased padding for larger menu items */
     font-weight: bold;
     display: flex;
     align-items: center;
+    font-size: 18px; /* Increased font size for larger menu items */
 }
 
 #menu_options a:hover,
@@ -188,9 +189,8 @@
 }
 
 .logo img {
-    width: 100px;
+    width: 70px; /* Reduced logo size */
 }
-
 nav ul {
     list-style: none;
 }
