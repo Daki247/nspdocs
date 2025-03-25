@@ -214,6 +214,16 @@ nav ul li a {
     align-items: center;
 }
 
+nav.menu #menu_options a { /* Increased specificity */
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
 .row {
     display: flex;
     justify-content: space-around;
