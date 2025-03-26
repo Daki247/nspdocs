@@ -164,14 +164,13 @@
 
 .cutoff-container {
     position: relative;
-    width: 100%;
+    width: 250px;
     max-width: 1200px; /* added max width */
     height: auto; /* changed height */
     overflow: hidden;
-    display: flex;
-    justify-content: flex-start; /* Image to left */
+
     align-items: left;
-    margin: 0 auto; /* center the whole container */
+
 }
 
 .cutoff-container img {
