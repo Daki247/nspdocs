@@ -175,8 +175,8 @@
 }
 
 .cutoff-container img {
-    width: 50%; /* reduced image size */
-    height: auto;
+    width: 100%; /* reduced image size */
+    height: 250px;
     object-fit: contain; /* changed object fit */
     clip-path: ellipse(75% 100% at 50% 0%);
 }
