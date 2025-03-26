@@ -170,7 +170,7 @@
     overflow: hidden;
     display: flex;
     justify-content: flex-start; /* Image to left */
-    align-items: center;
+    align-items: left;
     margin: 0 auto; /* center the whole container */
 }
 
