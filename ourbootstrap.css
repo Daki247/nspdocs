@@ -324,9 +324,10 @@ body {
 .footer hr{
     border-style: none;
     border-top-style: dotted ;
-    border-color: gray;
+    border-color: #ca00ff;
     border-width: 10px;
     width: 30%;
+    margin: 0 auto;
 }
 
 .sm {
