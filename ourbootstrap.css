@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 
 #holder-slider {
     font-family: sans-serif;
@@ -61,19 +61,6 @@
     font-size: 16px;
 }
 
-.section {
-    width: 100%;
-    padding: 40px;
-}
-
-.section h2 {
-    margin-bottom: 20px;
-}
-
-.section p {
-    line-height: 1.6;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -95,28 +82,26 @@
     font-weight: bold;
 }
 
-#menu_options,
 .menu {
     display: flex;
-    background-color: #f4a460; /* Set menu background color (adjust as needed) */
+    background-color: #f4a460;
     padding: 10px 0;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-#menu_options a {
+.menu a {
     text-decoration: none;
     color: black;
-    padding: 15px 20px; /* Increased padding for larger menu items */
+    padding: 15px 20px;
     font-weight: bold;
     display: flex;
     align-items: center;
-    font-size: 18px; /* Increased font size for larger menu items */
+    font-size: 18px;
 }
 
-#menu_options a:hover,
-.dropdown:hover .dropbtn {
+.menu a:hover {
     background: #ffd700;
 }
 
@@ -149,9 +134,9 @@
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-left: 20px; /* Add space between menu and button */
-    padding: 8px 12px; /* Adjust button padding */
-    font-size: 16px; /* Adjust button font size */
+    margin-left: 20px;
+    padding: 8px 12px;
+    font-size: 16px;
 }
 
 .login-btn:hover {
@@ -165,48 +150,44 @@
 .cutoff-container {
     position: relative;
     width: 250px;
-    max-width: 1200px; /* added max width */
-    height: auto; /* changed height */
+    max-width: 1200px;
+    height: auto;
     overflow: hidden;
-
     align-items: left;
-
 }
 
 .cutoff-container img {
-    width: 250px; /* reduced image size */
+    width: 250px;
     height: 250px;
-    object-fit: contain; /* changed object fit */
+    object-fit: contain;
     clip-path: ellipse(75% 100% at 50% 0%);
 }
 
 .cutoff-text {
     position: absolute;
     top: 50%;
-    left: 25%; /* Move text to the left */
-    transform: translateY(-50%); /* Adjust vertical alignment */
-    text-align: left; /* Align text to the left */
+    left: 25%;
+    transform: translateY(-50%);
+    text-align: left;
     color: rgb(220, 26, 26);
     font-family: 'Tilt Prism', cursive;
     z-index: 1;
 }
 
 .navbar-brand {
-    font-size: 24px; /* Increase logo font size */
-    font-weight: bold; /* Make logo text bold */
-    color: black; /* Set logo text color */
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
 }
-
 
 .navbar-brand img {
     width: 70px;
     height: auto;
 }
 
-/* Menu Fix */
 .navbar-nav .nav-item .nav-link {
-    padding: 10px 15px; /* Adjust padding for spacing */
-    font-size: 16px; /* Adjust font size */
+    padding: 10px 15px;
+    font-size: 16px;
     font-weight: bold;
     color: black;
 }
@@ -215,9 +196,11 @@
     font-size: 16px;
     color: black;
 }
+
 .logo img {
-    width: 70px; /* Reduced logo size */
+    width: 70px;
 }
+
 nav ul {
     list-style: none;
 }
@@ -239,16 +222,6 @@ nav ul li a {
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
-}
-
-nav.menu #menu_options a { /* Increased specificity */
-    text-decoration: none;
-    color: black;
-    padding: 15px 20px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
 }
 
 .row {
@@ -339,6 +312,14 @@ body {
     margin-top: 10px;
 }
 
+.footer hr{
+    border-style: none;
+    border-top-style: dotted ;
+    border-color: gray;
+    border-width: 10px;
+    width: 30%;
+}
+
 .review-card {
     text-align: left;
     background-color: azure;
@@ -346,4 +327,21 @@ body {
     margin: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(151, 145, 145);
-    align-self
+}
+
+.sm {
+    text-align: center;
+    padding: 10px;
+}
+
+.smb {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer {
+    background-color: #f4a460;
+}
