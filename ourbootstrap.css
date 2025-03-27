@@ -62,18 +62,19 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: linear-gradient(yellow, orange);
-    border-bottom: 2px solid #f4a460;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(yellow, orange);
+    border-bottom: 2px solid #f4a460;
 }
 
 .header .contact-info {
     display: flex;
     flex-direction: column; /* This makes the items stack vertically */
-    align-items: flex-end; /* Align to the right side*/
+    align-items: flex-start; /* Align to the left side*/
+    padding-left: 20px; /* add left padding */
 }
 
 .header .contact-info a {
