@@ -68,13 +68,22 @@
     padding: 10px 20px;
     background: linear-gradient(yellow, orange);
     border-bottom: 2px solid #f4a460;
+    position: relative; /* Needed for absolute positioning of the button */
 }
 
 .header .contact-info {
     display: flex;
-    flex-direction: column; /* This makes the items stack vertically */
-    align-items: flex-start; /* Align to the left side*/
-    padding-left: 20px; /* add left padding */
+    flex-direction: row; /* Display items in a row */
+    align-items: center;
+    padding-left: 60px; /* Add padding to accommodate button */
+}
+
+.header .navbar-toggler {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure it's above other header content */
 }
 
 .header .contact-info a {
@@ -85,8 +94,20 @@
     margin-bottom: 5px; /* Add a little spacing between phone and email */
 }
 
+.navbar-expand-lg .navbar-toggler {
+    display: flex !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: none !important;
+}
+
+.navbar-expand-lg .navbar-collapse.show {
+    display: block !important;
+}
+
 .menu {
-    display: flex;
+    display: block;
     background-color: #f4a460;
     padding: 10px 0;
     justify-content: center;
