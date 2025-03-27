@@ -72,14 +72,16 @@
 
 .header .contact-info {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* This makes the items stack vertically */
+    align-items: flex-end; /* Align to the right side*/
 }
 
 .header .contact-info a {
-    margin-right: 20px;
+    margin-right: 0; /* Remove unnecessary right margin */
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-bottom: 5px; /* Add a little spacing between phone and email */
 }
 
 .menu {
