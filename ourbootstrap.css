@@ -62,12 +62,12 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: linear-gradient(yellow, orange);
-    border-bottom: 2px solid #f4a460;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(yellow, orange);
+    border-bottom: 2px solid #f4a460;
 }
 
 .header .contact-info {
