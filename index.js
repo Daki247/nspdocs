@@ -28,15 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('#navbarNav');
 
-    navbarToggler.addEventListener('click', function () {
-        navbarCollapse.classList.toggle('show');
-    });
-
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
+        link.addEventListener('click', function () {
             navbarCollapse.classList.remove('show');
-            event.stopPropagation(); // Prevent event from bubbling up
         });
     });
 });
