@@ -7,6 +7,62 @@ body {
     font-family: sans-serif;
 }
 
+.panel-body-panel {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between images */
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.panel-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+ .jumbotron {
+  margin-bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url("Venkateswara.jpg");
+  background-size: cover;
+  height: 100%;
+  font-family: Montserrat;
+  height: 100px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  }
+
+.fa-youtube {
+  background: #bb0000;
+ }
+
+.fa-instagram {
+  background: #125688;
+ }
+
 .header {
     display: flex;
     justify-content: space-between;
