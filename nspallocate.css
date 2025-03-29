@@ -326,16 +326,25 @@ nav ul li a {
     margin: 5px 2px;
 }
 
-#facebook:hover {
-    color: #74C0FC;
+.smb i {
+    font-size: 24px;
+    line-height: 1;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: none; /* Remove border */
 }
 
-#instagram:hover {
-    color: #e1306c;
+#facebook:hover i {
+    color: #74C0FC; /* Facebook hover color */
 }
 
-#youtube:hover {
-    color: #fe3939;
+#instagram:hover i {
+    color: #e1306c; /* Instagram hover color */
+}
+
+#youtube:hover i {
+    color: #fe3939; /* YouTube hover color */
 }
 
 .jumbotron {
