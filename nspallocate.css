@@ -323,7 +323,7 @@ nav ul li a {
     border: none;
     border-radius: 50px;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 2px;
 }
 
 #facebook:hover {
