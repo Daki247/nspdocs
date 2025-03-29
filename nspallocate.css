@@ -33,6 +33,19 @@ body {
   clear: both;
 }
 
+.row {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin: 10px 5px;
+}
+
 
  .jumbotron {
   margin-bottom: 0;
