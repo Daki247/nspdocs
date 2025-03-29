@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nitya Stotra Parayanam</title>
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="nspallocate.css">
-    <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/df9b658038.js" crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="row align-items-center">
@@ -28,6 +34,7 @@
         </div>
     </header>
 
+    <!-- Navigation -->
     <nav class="navbar menu">
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -56,86 +63,105 @@
         </div>
     </nav>
 
+    <!-- Cutoff Container -->
     <div class="cutoff-container">
         <img src="Daki.png" alt="Cutoff Image" class="img-fluid">
         <div class="cutoff-text">
             <h1>Nitya Stotra Parayanam</h1>
         </div>
     </div>
-<div class="row">
-	<!--Names-->
-	<div class="col-sm-3">
-	
-	<div class="row"> 
-		<div class="col-sm-6">
-			<input type="text" class="form-control" id="batchnumber"  style="font-family: Courier" placeholder="Batch Number e.g. LS1, LS2" required></input>
-		</div>
-		<div class="col-sm-6">
-			<input type="text" class="form-control" id="satsangdate"  style="font-family: Courier" placeholder="Satsang date e.g. 2-Sep-2025 /1 PM IST" required></input>
-		</div>
-	</div>
-	  <label for="names" class="form-label">Enter Names</label>
-	  <br>
-	  <small><i>*Enter <strong>NSP</strong> as first name to allocate one portion once. (optional)</i></small>
-	  
-	  <textarea class="form-control" id="names" rows="15" style="font-family: Courier; margin: 5px 0 0 0 ">persons</textarea>
-	  <div class="row"> 
-		  <button type="button" accesskey="c" class="btn btn-danger" style="margin: 10px 5px 5px 10px;" onclick = "clearNames()">Clear</button>
-		  <button type="button" class="btn btn-danger" style="margin: 10px 5px 5px 10px;" onclick = "tempSave()"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
-	  </div>
-	</div>
 
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Names Section -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="batchnumber" placeholder="Batch Number e.g. LS1, LS2" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="satsangdate" placeholder="Satsang date e.g. 2-Sep-2025 /1 PM IST" required>
+                        </div>
+                    </div>
+                    
+                    <label for="names" class="form-label">Enter Names</label>
+                    <small class="form-text text-muted">
+                        *Enter <strong>NSP</strong> as first name to allocate one portion once. (optional)
+                    </small>
+                    
+                    <textarea class="form-control" id="names" rows="15">persons</textarea>
+                    
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-danger btn-sm me-2" onclick="clearNames()">Clear</button>
+                        <button type="button" class="btn btn-primary btn-sm" onclick="tempSave()">
+                            <i class="fas fa-save"></i> Save
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-	<!--Allocation-->
-	<div class="col-sm-6">
-		<div class="row">
-			<button type="button" accesskey="a" class="btn btn-success" style="margin: 10px 5px 5px 10px;" onclick = "allocate('asis')">Allocate</button>
-			<button type="button" class="btn btn-success" style="margin: 10px 5px 5px 10px;" onclick = "allocate('random')">Alloc Randomly</button>
-			<!--<button type="button" class="btn btn-success" style="margin: 10px 5px 5px 10px;" onclick = "allocate('roll')">Alloc on-Roll</button>-->
-			
-			<button type="button" class="btn btn-success" style="margin: 10px 5px 5px 10px;" onclick = "allocate('shloka')">Alloc only Shloka</button>
-		</div>
-	  <label for="allocation" class="form-label">Allocation</label>
-	  <textarea class="form-control" id="allocation" rows="15" style="font-family: Courier; background: #e6ebe7"></textarea>
-	  <div class="row"> 
-		  <button type="button" class="btn btn-success btn-md" style="margin: 10px 5px 0px 10px;" onclick = "copyToClipboard('allocation')"><span class="glyphicon glyphicon-copy"></span> Copy Allocations</button> 
-		  <button type="button" class="btn btn-success btn-md" style="margin: 10px 5px 0px 10px;" onclick = "downloadCSV()"><span class="glyphicon glyphicon-download-alt"></span> Download CSV/XL</button> 
-	  </div>
-	</div>
-	
-	<!--Random Names-->
-	<div class="col-sm-3">
-		<div class="row">
-			<button type="button" class="btn btn-info" style="margin: 10px 5px 5px 10px;" onclick = "operateNames('random')">Randomize Names</button>
-		</div>
-		<label for="randomnames" class="form-label">Randomized Names</label>
-		<textarea class="form-control" id="randomnames" rows="15" style="font-family: Courier; background: #e6ebe7"></textarea>
-	  <div class="row"> 
-		  <button type="button" class="btn btn-info btn-md" style="margin: 10px 15px;" onclick = "copyToClipboard('randomnames')"><span class="glyphicon glyphicon-copy"></span> Copy Names</button> 
-	  </div>
-	</div>
-	
-</div>
-<br>
-<br>
+            <!-- Allocation Section -->
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <button type="button" class="btn btn-success btn-sm me-2" onclick="allocate('asis')">Allocate</button>
+                    <button type="button" class="btn btn-success btn-sm me-2" onclick="allocate('random')">Alloc Randomly</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="allocate('shloka')">Alloc only Shloka</button>
+                </div>
+                
+                <label for="allocation" class="form-label">Allocation</label>
+                <textarea class="form-control" id="allocation" rows="15" readonly></textarea>
+                
+                <div class="mt-3">
+                    <button type="button" class="btn btn-success btn-sm me-2" onclick="copyToClipboard('allocation')">
+                        <i class="fas fa-copy"></i> Copy Allocations
+                    </button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="downloadCSV()">
+                        <i class="fas fa-download"></i> Download CSV/XL
+                    </button>
+                </div>
+            </div>
+
+            <!-- Random Names Section -->
+            <div class="col-md-3">
+                <div class="mb-3">
+                    <button type="button" class="btn btn-info btn-sm" onclick="operateNames('random')">Randomize Names</button>
+                </div>
+                
+                <label for="randomnames" class="form-label">Randomized Names</label>
+                <textarea class="form-control" id="randomnames" rows="15" readonly></textarea>
+                
+                <div class="mt-3">
+                    <button type="button" class="btn btn-info btn-sm" onclick="copyToClipboard('randomnames')">
+                        <i class="fas fa-copy"></i> Copy Names
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    
-<footer class="footer">
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="sm">
             <h1>Stay Connected With Us</h1>
             <hr>
-            <br>
-            <button class="smb" onclick="javascript:facebook();" id="facebook"><i
-                    class="fa-brands fa-facebook fa-2xl"></i></button>
-            <button class="smb" onclick="javascript:instagram();" id="instagram"><i
-                    class="fa-brands fa-instagram fa-2xl"></i></button>
-            <button class="smb" onclick="javascript:yt();" id="youtube"><i
-                    class="fa-brands fa-youtube fa-2xl"></i></button>
-            <br>
+            <div class="social-icons">
+                <button class="btn btn-social" onclick="facebook()" id="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button class="btn btn-social" onclick="instagram()" id="instagram">
+                    <i class="fab fa-instagram"></i>
+                </button>
+                <button class="btn btn-social" onclick="yt()" id="youtube">
+                    <i class="fab fa-youtube"></i>
+                </button>
+            </div>
         </div>
     </footer>
 
-    <script src="slider.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
-
 </html>
