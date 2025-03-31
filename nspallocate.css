@@ -1,34 +1,12 @@
-/* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Montserrat:wght@400;700&display=swap');
-
-/* Reset and Base Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 
 body {
-    font-family: 'Montserrat', 'Tilt Prism', 'Trebuchet MS', Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: azure;
-    line-height: 1.6;
-    font-size: 16px;
+    font-family: sans-serif;
 }
 
-/* Responsive Typography */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .cutoff-text {
-        font-size: 16px;
-    }
-}
-
-/* Social Icons */
 .social-icons {
     text-align: center;
     padding: 10px;
@@ -52,12 +30,10 @@ body {
     font-size: 24px;
 }
 
-/* Responsive Image Panels */
 .panel-body-panel {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 20px; /* Space between images */
     padding: 10px;
     border: 2px solid #ccc;
     background-color: #fff;
@@ -73,133 +49,111 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Grid */
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .row {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 20px;
     padding: 15px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Forms */
 .form-control {
-    width: 100%;
     margin-bottom: 10px;
-    padding: 8px;
 }
 
 .btn {
     margin: 10px 5px;
-    padding: 10px 15px;
-    width: 100%;
 }
 
-@media (min-width: 768px) {
-    .btn {
-        width: auto;
-    }
+
+ .jumbotron {
+  margin-bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url("Venkateswara.jpg");
+  background-size: cover;
+  height: 100%;
+  font-family: Montserrat;
+  height: 100px;
 }
 
-/* Header and Navigation */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  }
+
+.fa-youtube {
+  background: #bb0000;
+ }
+
+.fa-instagram {
+  background: #125688;
+ }
+
 .header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background: linear-gradient(yellow, orange);
     border-bottom: 2px solid #f4a460;
+    position: relative;
 }
 
 .header .contact-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 50px;
 }
 
 .header .contact-info a {
+    margin-right: 0;
     text-decoration: none;
     color: black;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-/* Cutoff Container */
-.cutoff-container {
-    max-width: 250px;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+.header .navbar-toggler {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
 }
 
-.cutoff-container img {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    clip-path: ellipse(75% 100% at 50% 0%);
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.cutoff-text {
-    text-align: center;
-    color: rgb(220, 26, 26);
-    font-family: 'Tilt Prism', cursive, sans-serif;
+/* Add this CSS rule to hide the navbar collapse by default on large screens */
+.navbar-expand-lg .navbar-collapse {
+    display: none !important;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    background-color: #f4a460;
-    padding: 20px;
+.navbar-expand-lg .navbar-collapse.collapsing {
+    display: none !important;
 }
 
-.footer hr {
-    border: none;
-    border-top: 10px dotted #ca00ff;
-    width: 30%;
-    margin: 0 auto;
-}
+/* Remove the following CSS rules */
+/* .navbar-expand-lg .navbar-collapse {
+    display: none;
+} */
 
-/* Social Media Buttons */
-.smb {
-    background-color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 10px;
-    margin: 5px 2px;
-    display: inline-block;
-}
-
-.smb i {
-    font-size: 24px;
-    line-height: 1;
-    text-decoration: none;
-    color: black;
-}
-
-/* Hover Effects */
-#facebook:hover i { color: #74C0FC; }
-#instagram:hover i { color: #e1306c; }
-#youtube:hover i { color: #fe3939; }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .header, .panel-body-panel {
-        flex-direction: column;
-    }
-
-    .navbar-nav {
-        width: 100%;
-    }
-}
-/* Continuing from previous CSS... */
-
-/* Navigation Styles */
+/* .navbar-expand-lg .navbar-collapse.show {
+    display: block;
+} */
 .menu {
     background-color: #f4a460;
     padding: 10px 0;
@@ -250,7 +204,6 @@ body {
     padding: 10px;
 }
 
-/* Login Button */
 .login-btn {
     background: red;
     color: white;
@@ -259,42 +212,54 @@ body {
     margin-left: 20px;
     padding: 8px 12px;
     font-size: 16px;
-    transition: all 0.3s ease;
 }
 
 .login-btn:hover {
     background: yellow;
     color: black;
     padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-/* Responsive Adjustments for Login Button */
-@media (max-width: 768px) {
-    .login-btn {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
-        margin-top: 10px;
-    }
+.cutoff-container {
+    position: relative;
+    width: 250px;
+    max-width: 1200px;
+    height: auto;
+    overflow: hidden;
+    align-items: left;
 }
 
-/* Navbar Brand */
+.cutoff-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    clip-path: ellipse(75% 100% at 50% 0%);
+}
+
+.cutoff-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: rgb(220, 26, 26);
+    font-family: 'Tilt Prism', cursive;
+    z-index: 1;
+}
+
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
     color: black;
-    display: flex;
-    align-items: center;
 }
 
 .navbar-brand img {
     width: 70px;
     height: auto;
-    margin-right: 10px;
 }
 
-/* Navbar Navigation */
 .navbar-nav .nav-item .nav-link {
     padding: 10px 15px;
     font-size: 16px;
@@ -307,112 +272,45 @@ body {
     color: black;
 }
 
-/* Logo */
 .logo img {
     width: 70px;
-    max-height: 70px;
-    object-fit: contain;
 }
 
-/* Navigation List */
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 nav {
     text-align: right;
-    font-family: 'Courgette', cursive, sans-serif;
+    font-family: 'Courgette', cursive;
     width: 40%;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ff0000;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #800000;
-}
-
-/* Navigation Bar */
 .navBar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-/* Jumbotron */
-.jumbotron {
-    margin-bottom: 0;
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(255,255,255,0.6) 0%,
-        rgba(255,255,255,0.9) 100%
-    ), url("Venkateswara.jpg");
-    background-size: cover;
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Font Awesome Icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+.footer {
     text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    color: white;
+    background-color: #f4a460;
 }
 
-.fa-facebook { background: #3B5998; }
-.fa-youtube { background: #bb0000; }
-.fa-instagram { background: #125688; }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .navBar, nav {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav {
-        text-align: center;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-}
-
-/* Additional Footer Styling */
-#footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background: #6cf;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Continuing from previous CSS... */
-
-/* Social Media Section */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa;
+.footer hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #ca00ff;
+    border-width: 10px;
+    width: 30%;
+    margin: 0 auto;
 }
 
 .sm {
@@ -420,169 +318,109 @@ nav ul li a:hover {
     padding: 10px;
 }
 
-/* Responsive Social Media Buttons */
 .smb {
     background-color: white;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     padding: 10px;
     margin: 5px 2px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    transition: all 0.3s ease;
 }
 
 .smb i {
     font-size: 24px;
     line-height: 1;
+    text-decoration: none;
+    background-color: white;
     color: black;
+    border: none; /* Remove border */
 }
 
-/* Hover Effects for Social Media Icons */
-#facebook:hover {
-    background-color: #3B5998;
+#facebook:hover i {
+    color: #74C0FC; /* Facebook hover color */
 }
 
-#instagram:hover {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+#instagram:hover i {
+    color: #e1306c; /* Instagram hover color */
 }
 
-#youtube:hover {
-    background-color: #FF0000;
-}
-
-#facebook:hover i,
-#instagram:hover i,
 #youtube:hover i {
-    color: white;
+    color: #fe3939; /* YouTube hover color */
 }
 
-/* Dropdown Styling */
-.dropdown-menu {
-    background-color: #f8f9fa;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.jumbotron {
+  margin-bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url("Venkateswara.jpg");
+  background-size: cover;
+  height: 100%;
+  font-family: Montserrat;
+  height: 100px;
 }
-
-.dropdown-item {
-    color: #333;
-    transition: all 0.3s ease;
 }
-
-.dropdown-item:hover {
-    background-color: #f1f3f5;
-    color: #000;
-}
-
-/* Responsive Typography */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-}
-
-/* Form Styling */
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-control {
-    width: 100%;
+/* Add a gray background color and some padding to the footer 
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+}*/
+.panel-body-panel {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between images */
     padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
-.form-control:focus {
-    border-color: #80bdff;
-    outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
-
-/* Button Styles */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-/* Accessibility Improvements */
-a:focus,
-button:focus {
-    outline: 2px solid #80bdff;
-    outline-offset: 2px;
-}
-
-/* Print Styles */
-@media print {
-    body {
-        font-size: 12pt;
-        color: #000;
-        background: #fff;
-    }
-
-    .header, .footer {
-        display: none;
-    }
-}
-
-/* Performance and Optimization */
-img {
+.panel-image {
     max-width: 100%;
     height: auto;
-    image-rendering: -webkit-optimize-contrast;
-}
-
-/* Additional Responsive Utilities */
-.hidden-xs {
     display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767px) {
-    .hidden-xs {
-        display: none;
-    }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  }
+
+.fa-youtube {
+  background: #bb0000;
+ }
+
+.fa-instagram {
+  background: #125688;
+ }
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+body {
+  font-family: Montserrat, "Trebuchet MS", Verdana, sans-serif;
+  padding: 5px;
+  background-size: cover;
 }
 
-/* Final Global Adjustments */
-* {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-/* Scroll Bar Styling (Optional) */
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
 
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
 
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
+
