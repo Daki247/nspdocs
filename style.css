@@ -1,10 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&family=Montserrat:wght@400;700&family=Courgette&family=Open+Sans:wght@400;600&display=swap');
 
-body {
+/* Root Variables for Consistent Design */
+:root {
+    --primary-font: 'Open Sans', Arial, sans-serif;
+    --accent-font: 'Montserrat', sans-serif;
+    --decorative-font: 'Tilt Prism', cursive;
+    --script-font: 'Courgette', cursive;
+    
+    --color-primary: #f4a460;
+    --color-background: azure;
+    --color-text: black;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: azure;
-    font-family: sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Responsive Typography */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .menu .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
 }
 
 .panel-body-panel {
@@ -33,13 +72,12 @@ body {
   clear: both;
 }
 
-
- .jumbotron {
+.jumbotron {
   margin-bottom: 0;
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url("Venkateswara.jpg");
   background-size: cover;
   height: 100%;
-  font-family: Montserrat;
+  font-family: var(--accent-font);
   height: 100px;
 }
 
@@ -110,14 +148,6 @@ body {
     display: none !important;
 }
 
-/* Remove the following CSS rules */
-/* .navbar-expand-lg .navbar-collapse {
-    display: none;
-} */
-
-/* .navbar-expand-lg .navbar-collapse.show {
-    display: block;
-} */
 .menu {
     background-color: #f4a460;
     padding: 10px 0;
@@ -209,7 +239,7 @@ body {
     transform: translateY(-50%);
     text-align: left;
     color: rgb(220, 26, 26);
-    font-family: 'Tilt Prism', cursive;
+    font-family: var(--decorative-font);
     z-index: 1;
 }
 
@@ -410,7 +440,7 @@ nav ul {
 
 nav {
     text-align: right;
-    font-family: 'Courgette', cursive;
+    font-family: var(--script-font);
     width: 40%;
 }
 
@@ -437,6 +467,34 @@ nav ul li a {
 }
 
 .row .content {
-    font-family: 'Tilt Prism', cursive;
+    font-family: var(--decorative-font);
     color: rgb(220, 26, 26);
+}
+
+/* Additional Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .header .contact-info {
+        padding-left: 0;
+        align-items: center;
+    }
+    
+    .product-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-card, .review-card {
+        margin-bottom: 20px;
+    }
+    
+    .ad {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 }
