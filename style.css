@@ -118,6 +118,31 @@ html {
     padding-left: 50px;
 }
 
+.header .language-dropdown {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.header .language-dropdown .dropdown-toggle {
+    background-color: #f4a460;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+.header .language-dropdown .dropdown-menu {
+    background-color: #f4a460;
+    border: none;
+}
+
+.header .language-dropdown .dropdown-item {
+    color: black;
+}
+
+.header .language-dropdown .dropdown-item:hover {
+    background-color: #ffd700;
+}
 .header .contact-info a {
     margin-right: 0;
     text-decoration: none;
