@@ -223,30 +223,35 @@ body {
 }
 
 .cutoff-container {
-    position: relative;
-    width: 250px;
-    max-width: 1200px;
-    height: auto;
+    position: absolute; /* Ensure it's positioned absolutely */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    width: 150px; /* Match the image width */
+    height: 150px; /* Match the image height */
     overflow: hidden;
-    align-items: left;
+    z-index: 10; /* Ensure it appears above other elements */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 
 .cutoff-container img {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-    clip-path: ellipse(75% 100% at 50% 0%);
+    width: 135px; /* Set the desired width */
+    height: 135px; /* Set the desired height */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    clip-path: ellipse(75% 100% at 50% 0%); /* Keep the existing clip-path if needed */
 }
 
-.cutoff-text {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translateY(-50%);
-    text-align: left;
-    color: rgb(220, 26, 26);
-    font-family: 'Tilt Prism', cursive;
-    z-index: 1;
+.text-container {
+    text-align: center; /* Center the text horizontally */
+    margin: 20px 0; /* Add some vertical spacing */
+    color: rgb(220, 26, 26); /* Text color */
+    font-family: var(--decorative-font); /* Font family */
+    z-index: 1; /* Ensure it appears above other elements if needed */
+}
+
+.text-container h1 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin */
 }
 
 .navbar-brand {
