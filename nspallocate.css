@@ -65,6 +65,31 @@ body {
     margin-bottom: 10px;
 }
 
+
+.btn-donate {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    top: 0;
+}
+
+.btn-donate:hover,
+.btn-donate:focus {
+    background-color: #ff5252;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-donate i {
+    font-size: 1rem;
+}
+
 .btn {
     margin: 10px 5px;
 }
